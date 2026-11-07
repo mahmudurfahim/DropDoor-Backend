@@ -1,0 +1,15 @@
+{% extends "admin/base_site.html" %}
+{% block extrastyle %}{{ block.super }}
+<style>
+  /* DropDoor look for the Django admin: emerald header, one coloured box per topic, admins in slate so they never look like resellers */
+  #header { background: #0f766e; }
+  #header a:link, #header a:visited { color: #fff; }
+  #content-main .module caption, #content-main .module th { letter-spacing: .02em; }
+  #content-main .module caption { background: #0f766e; color: #fff; font-size: 14px; }
+  #content-main .module caption a:link, #content-main .module caption a:visited { color: #fff; }
+  #content-main .app-group4 caption { background: #334155; }
+  #content-main .app-group5 caption { background: #64748b; }
+  #content-main .app-group6 caption, #content-main .app-groupx caption { background: #94a3b8; }
+  #content-main .module { border-radius: 8px; overflow: hidden; margin-bottom: 18px; }
+</style>
+{% endblock %}
